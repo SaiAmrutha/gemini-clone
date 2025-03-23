@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lobster&family=Nova+Square&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Itim;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.light .sidebar {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+body.dark .sidebar,
+body.dark .icons,
+body.dark p,
+body.dark .text-box-icons,
+body.dark div {
+  background-color: #333;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
